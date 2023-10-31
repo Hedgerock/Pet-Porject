@@ -119,12 +119,14 @@ socialMediaList.innerHTML = socialMediaElements;
 
 burgerMenu.onclick = function() {
     menuList.classList.add('menu_visible');
-    layout.classList.add('layout_visible')
+    layout.classList.add('layout_visible');
+    document.body.classList.toggle('overflow-scroll')
 }
 
 layout.onclick = function() {
     menuList.classList.remove('menu_visible');
-    layout.classList.remove('layout_visible')
+    layout.classList.remove('layout_visible');
+    document.body.classList.toggle('overflow-scroll');
 }
 
 const pictures = ['header_first-picture', 'header_second-picture', 'header_third-picture'];

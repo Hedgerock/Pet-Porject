@@ -1,12 +1,37 @@
+@media (max-width: 1400px) {
+    .content-block {
+        width: 80%;
+    }
+
+    .company-box {
+        flex-direction: column;
+        height: initial;
+    }
+}
+
 @media (max-width:1100px) {
     html {
         font-size: 13px;
     }
 }
 
+@media (max-width: 1050px) {
+    .social-media {
+        right: -20px;
+    }
+
+    .partner-block {
+        width: calc((100% - 2 * 1rem) / 2);
+    }
+}
+
 @media (max-width: 980px) {
     .burger-menu {
         display: block;
+    }
+
+    .content-block {
+        width: 85%;
     }
 
     .header-top-container {
@@ -18,7 +43,7 @@
 
     .menu {
         position: absolute;
-        top: 100%;
+        top: 0;
         left: 0;
         flex-direction: column;
         padding: 1rem;
@@ -45,6 +70,62 @@
     }
 }
 
+@media (max-width: 750px) {
+    .cooperation-block {
+        margin: 4rem 0;
+    }
+
+    .cooperation-block-container {
+        height: initial;
+        background: #276ed8;
+        padding: 1.5rem 0;
+    }
+
+    .contacts {
+        flex-direction: column;
+        &-form {
+            justify-content: center;
+        }
+    }
+
+
+
+    .fieldset-block {
+        width: 75% !important;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 730px) {
+    .achievement-block {
+        height: 300px;
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+@media (max-width: 725px) {
+    .partner-block {
+        min-width: initial;
+    }
+}
+
+
+@media (max-width: 675px) {
+    .first-part,
+    .second-part {
+        width: 100%;
+    }
+
+    .first-part__title {
+        text-align: center;
+    }
+}
+
 @media (max-width: 600px) {
     .burger-menu {
         display: block;
@@ -52,8 +133,10 @@
 
     .header {
         background-position: top;
+        height: initial;
         &-content-container {
-            padding-top: 0;
+            padding-top: 1.2rem;
+            height: initial;
             &__subtitle {
                 color: white;
                 text-align: center;
@@ -78,6 +161,10 @@
         width: 80%;
     }
 
+    .main-content-block {
+        margin-bottom: 0;
+    }
+
     .content-block {
         width: 100%;
     }
@@ -86,8 +173,137 @@
         justify-content: center;
     }
 
-    .contact-us, .social-media, .header-content-container__title, .scroll-buttons {
+    .links {
+        margin: 0;
+    }
+
+    .contact-us, 
+    .social-media, 
+    .header-content-container__title, 
+    .scroll-buttons,
+    .header-content-container__paragraph,
+    .buttons {
         display: none;
+    }
+
+    .main-content {
+        &-block {
+            &-elem {
+                .first-part,
+                .second-part {
+                    width: 100%;
+                    min-width: initial;
+                }
+            }
+            &_partners {
+                height: initial;
+                background: none;
+            }
+        }
+    }
+
+    .first-part__title {
+        text-align: center;
+    }
+
+    .company-box {
+        flex-direction: column;
+        height: initial;
+        width: 100%;
+        
+        .rating {
+            margin: 1.5rem 0;
+        }
+    }
+
+    .cooperation-block {
+        background: #276ed8;
+        &-container {
+            height: initial;
+            padding: 1.2rem;
+        }
+        &__title {
+            font-size: 2.3rem;
+        }
+    }
+
+    .achievements {
+        justify-content: center;
+    }
+
+    .achievement-block {
+        height: 300px;
+        max-width: 250px;
+        &__img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .partner-block {
+        width: 100%;
+        min-width: initial;
+    }
+
+    .contacts {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .contacts-form {
+        .fieldset-block {
+            width: 100% !important;
+            margin-top: 2rem;
+            & input, textarea, button {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer {
+        background: #194484;
+        &-container {
+            height: initial;
+            padding: 1rem;
+        }
+        &-content {
+            flex-direction: column;
+            padding: 2rem 0;
+        }
+        &-list {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        &-element {
+            &_icon {
+                width: 26%;
+            }
+        }
+        &-bottom {
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
+
+    .elements {
+        margin: 1.5rem 1rem 0 0;
+    }
+}
+
+@media (max-width: 525px) {
+    .achievement-block {
+        width: 100%;
+        max-width: initial;
+        &:not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
+@media (max-height: 650px) {
+    .header {
+        min-height: 650px;
     }
 }
 
@@ -95,4 +311,4 @@
     body {
         min-width: 320px;
     }
-} 
+}
